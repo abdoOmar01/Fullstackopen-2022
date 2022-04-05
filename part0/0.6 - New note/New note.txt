@@ -1,0 +1,9 @@
+title New note
+
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over Browser:
+Browser sends message to be created
+end note
+
+Server-->Browser: HTTP 201 created {"message": "note created"}
