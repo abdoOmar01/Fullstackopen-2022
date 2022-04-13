@@ -27,7 +27,6 @@ const Country = ({country}) => {
       <img src={country.flags.png} />
       {weather !== null ?
       <div>
-        {console.log(weather)}
         <h3>Weather in {country.hasOwnProperty('capital')? country.capital[0] : country.name.common}</h3>
         <p>temperature {Math.round(weather.main.temp - 273.15)} Celsius</p>
         <img src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} />
